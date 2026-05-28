@@ -4,8 +4,12 @@ on: push
 jobs:
   print_hello_world:
     runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, World!!!!"
+      - run: echo "This is Step 2"
 
-
+  print_hello_world_2:
+    runs-on: ubuntu-latest
     steps:
       - run: echo "Hello, World!!!!"
       - run: echo "This is Step 2"
